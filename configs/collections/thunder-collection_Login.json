@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Login",
+    "dateExported": "2024-02-29T21:14:37.579Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "790ccecc-b985-484d-9d67-867ad7f76aca",
+            "colId": "92a6d4a5-3e97-417c-9301-78dac51feac8",
+            "containerId": "",
+            "name": "Registrar",
+            "url": "localhost:3000/OpinionManager/v1/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-29T21:09:37.825Z",
+            "modified": "2024-02-29T21:10:31.440Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Ivan Lopez\",\n  \"correo\": \"ilopez@kinal.edu\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2a1fe1b2-7f99-40b7-a95e-b6ee3186af8e",
+            "colId": "92a6d4a5-3e97-417c-9301-78dac51feac8",
+            "containerId": "",
+            "name": "Login",
+            "url": "localhost:3000/OpinionManager/v1/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-29T21:09:44.293Z",
+            "modified": "2024-02-29T21:11:20.562Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\": \"ilopez@kinal.edu\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

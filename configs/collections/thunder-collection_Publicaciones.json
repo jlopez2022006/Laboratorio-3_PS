@@ -1,0 +1,90 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Publicaciones",
+    "dateExported": "2024-03-01T15:15:11.930Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "04c839d4-ac42-4fb8-b5e0-aa336141bd6e",
+            "colId": "32fea0fb-97a6-4b6f-9bf9-10129a926810",
+            "containerId": "",
+            "name": "Crear Publicacion",
+            "url": "localhost:3000/OpinionManager/v1/publications",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T13:13:15.804Z",
+            "modified": "2024-03-01T13:20:38.277Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Titulo\": \"Mario Bros\",\n  \"Categoria\": \"Videojuego\",\n  \"TextoPrincipal\": \"Es el mejor juego que he jugado\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "86658c31-d02a-46cf-8a4d-ae92a3af8166",
+            "colId": "32fea0fb-97a6-4b6f-9bf9-10129a926810",
+            "containerId": "",
+            "name": "Ver publicaciones",
+            "url": "localhost:3000/OpinionManager/v1/publications",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-01T13:16:20.047Z",
+            "modified": "2024-03-01T13:16:28.109Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4e632a0f-9bae-440f-8e18-c79e0f045792",
+            "colId": "32fea0fb-97a6-4b6f-9bf9-10129a926810",
+            "containerId": "",
+            "name": "Editar Publicacion",
+            "url": "localhost:3000/OpinionManager/v1/publications/65e1d565c86b46355d35ea75",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T13:17:40.356Z",
+            "modified": "2024-03-01T13:20:45.207Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Titulo\": \"SHE!N\",\n  \"Categoria\": \"Musica\",\n  \"TextoPrincipal\": \"Me gusta mucho esa cancion\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa88f997-ff15-4ea3-b8b0-e0cd17438504",
+            "colId": "32fea0fb-97a6-4b6f-9bf9-10129a926810",
+            "containerId": "",
+            "name": "Eliminar Publicacion",
+            "url": "localhost:3000/OpinionManager/v1/publications/65e1d565c86b46355d35ea75",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-01T13:19:13.735Z",
+            "modified": "2024-03-01T13:20:54.724Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

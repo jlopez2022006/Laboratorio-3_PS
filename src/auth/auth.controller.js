@@ -15,7 +15,7 @@ export const login = async (req, res) => {
     }
     if (!usuario.estado) {
       return res.status(400).json({
-        msg: "User does not exist in the database.",
+        msg: "User does not exist in the database",
       });
     }
     const validPassword = bcryptjs.compareSync(password, usuario.password);

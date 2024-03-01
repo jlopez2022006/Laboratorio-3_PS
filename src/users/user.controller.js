@@ -54,7 +54,7 @@ export const usuariosPut = async (req, res = response) => {
     const usuario = await User.findOne({_id: id});
 
     res.status(200).json({
-        msg: 'Usuario Actualizado',
+        msg: 'Updated User',
         usuario
     });
 }
