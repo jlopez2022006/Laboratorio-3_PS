@@ -1,44 +1,44 @@
 {
     "client": "Thunder Client",
     "collectionName": "Login",
-    "dateExported": "2024-02-29T21:14:37.579Z",
+    "dateExported": "2024-03-01T17:25:45.237Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "790ccecc-b985-484d-9d67-867ad7f76aca",
-            "colId": "92a6d4a5-3e97-417c-9301-78dac51feac8",
+            "_id": "4a45e24c-ff69-4c43-8172-047059503544",
+            "colId": "de899972-69cc-42b7-adff-3aaea492ca3e",
             "containerId": "",
             "name": "Registrar",
             "url": "localhost:3000/OpinionManager/v1/users",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-29T21:09:37.825Z",
-            "modified": "2024-02-29T21:10:31.440Z",
+            "created": "2024-03-01T13:12:49.706Z",
+            "modified": "2024-03-01T17:15:59.702Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\": \"Ivan Lopez\",\n  \"correo\": \"ilopez@kinal.edu\",\n  \"password\": \"123456\"\n}",
+                "raw": "{\n  \"nombre\": \"Pedro Lopez\",\n  \"correo\": \"plopez@kinal.edu\",\n  \"password\": \"123456\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "2a1fe1b2-7f99-40b7-a95e-b6ee3186af8e",
-            "colId": "92a6d4a5-3e97-417c-9301-78dac51feac8",
+            "_id": "3e209885-42cb-4063-99c5-c1b804e3750f",
+            "colId": "de899972-69cc-42b7-adff-3aaea492ca3e",
             "containerId": "",
             "name": "Login",
             "url": "localhost:3000/OpinionManager/v1/auth/login",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-02-29T21:09:44.293Z",
-            "modified": "2024-02-29T21:11:20.562Z",
+            "created": "2024-03-01T13:12:49.708Z",
+            "modified": "2024-03-01T17:21:43.937Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"correo\": \"ilopez@kinal.edu\",\n  \"password\": \"123456\"\n}",
+                "raw": "{\n  \"correo\": \"plopez@kinal.edu\",\n  \"password\": \"123456\"\n}",
                 "form": []
             },
             "tests": []
