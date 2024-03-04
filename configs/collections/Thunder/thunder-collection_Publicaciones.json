@@ -1,24 +1,24 @@
 {
     "client": "Thunder Client",
     "collectionName": "Publicaciones",
-    "dateExported": "2024-03-02T19:08:51.803Z",
+    "dateExported": "2024-03-04T02:52:53.598Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "2a76e38a-deab-4b9b-a7e6-d2e5efeeb293",
-            "colId": "68d9c225-59c1-4bcd-827c-265b2dc8ca57",
+            "_id": "63106edf-b1e1-457e-8df1-640d8ba6039d",
+            "colId": "8afd4c70-bf58-4d57-953c-c1322d0517b4",
             "containerId": "",
             "name": "Crear Publicacion",
             "url": "localhost:3000/OpinionManager/v1/publications",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-02T17:07:46.310Z",
-            "modified": "2024-03-02T19:03:53.383Z",
+            "created": "2024-03-04T02:52:12.193Z",
+            "modified": "2024-03-04T02:52:21.281Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNzYzMTBiMmQ1YTgxMjA2MzI5MmYiLCJpYXQiOjE3MDk0MDYxNjUsImV4cCI6MTcwOTQyNDE2NX0.SJDVxDSBtLJK_6D8M7fZKKEJw5WUK8QggcCSsmzBYlA"
+                    "value": ""
                 }
             ],
             "params": [],
@@ -30,29 +30,29 @@
             "tests": []
         },
         {
-            "_id": "8aa64712-e826-4468-9cff-ad351926cb9f",
-            "colId": "68d9c225-59c1-4bcd-827c-265b2dc8ca57",
+            "_id": "e9c9deef-a32e-4346-8d11-f545192fa245",
+            "colId": "8afd4c70-bf58-4d57-953c-c1322d0517b4",
             "containerId": "",
             "name": "Ver publicaciones",
             "url": "localhost:3000/OpinionManager/v1/publications",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-03-02T17:07:46.311Z",
-            "modified": "2024-03-02T17:07:46.311Z",
+            "created": "2024-03-04T02:52:12.194Z",
+            "modified": "2024-03-04T02:52:12.194Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "04eaebe2-d49f-41a5-9629-018107588da9",
-            "colId": "68d9c225-59c1-4bcd-827c-265b2dc8ca57",
+            "_id": "cab47ac0-826a-42d8-808d-2aa54ccc90b6",
+            "colId": "8afd4c70-bf58-4d57-953c-c1322d0517b4",
             "containerId": "",
             "name": "Editar Publicacion",
             "url": "localhost:3000/OpinionManager/v1/publications/65e360b780a7265ddbaf031a",
             "method": "PUT",
             "sortNum": 30000,
-            "created": "2024-03-02T17:07:46.312Z",
-            "modified": "2024-03-02T18:27:55.872Z",
+            "created": "2024-03-04T02:52:12.195Z",
+            "modified": "2024-03-04T02:52:12.195Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -68,15 +68,15 @@
             "tests": []
         },
         {
-            "_id": "63115310-0e81-44c9-b220-fe1c277ce6c5",
-            "colId": "68d9c225-59c1-4bcd-827c-265b2dc8ca57",
+            "_id": "4f8713c5-baa1-47a1-9ee5-4532bc1f922e",
+            "colId": "8afd4c70-bf58-4d57-953c-c1322d0517b4",
             "containerId": "",
             "name": "Eliminar Publicacion",
             "url": "localhost:3000/OpinionManager/v1/publications/65e361df80a7265ddbaf031f",
             "method": "DELETE",
             "sortNum": 40000,
-            "created": "2024-03-02T17:07:46.313Z",
-            "modified": "2024-03-02T18:27:49.613Z",
+            "created": "2024-03-04T02:52:12.196Z",
+            "modified": "2024-03-04T02:52:12.196Z",
             "headers": [
                 {
                     "name": "x-token",

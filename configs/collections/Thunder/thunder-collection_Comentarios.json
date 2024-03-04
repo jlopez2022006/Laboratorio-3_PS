@@ -1,24 +1,24 @@
 {
     "client": "Thunder Client",
     "collectionName": "Comentarios",
-    "dateExported": "2024-03-02T19:09:00.199Z",
+    "dateExported": "2024-03-04T02:52:41.420Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "6ed17382-7f73-497d-aad1-0b9e47696a62",
-            "colId": "28b35271-8bba-4f65-af84-b800cb8fbc6f",
+            "_id": "c5d4544e-9f4f-499e-aed3-25e7fd478990",
+            "colId": "2ddeb800-1a2f-46f9-888e-c0abd270b181",
             "containerId": "",
             "name": "Comentar",
             "url": "localhost:3000/OpinionManager/v1/comments",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-02T17:07:46.266Z",
-            "modified": "2024-03-02T19:06:57.612Z",
+            "created": "2024-03-04T02:52:12.164Z",
+            "modified": "2024-03-04T02:52:32.305Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNzVlZTBiMmQ1YTgxMjA2MzI5MmMiLCJpYXQiOjE3MDk0MDYzNjQsImV4cCI6MTcwOTQyNDM2NH0.ExLlR3BOPvM2ZlcEL6HdHq75L6WgRWMyXbFuG4L9sas"
+                    "value": ""
                 }
             ],
             "params": [],
@@ -30,15 +30,15 @@
             "tests": []
         },
         {
-            "_id": "9cd6e9dd-f5de-4d9e-b9cf-0945e37f829f",
-            "colId": "28b35271-8bba-4f65-af84-b800cb8fbc6f",
+            "_id": "f5df2887-bfc8-4bfe-9c61-69efdc25cd67",
+            "colId": "2ddeb800-1a2f-46f9-888e-c0abd270b181",
             "containerId": "",
             "name": "Editar Comentario",
             "url": "localhost:3000/OpinionManager/v1/comments/65e3669580a7265ddbaf035e",
             "method": "PUT",
             "sortNum": 20000,
-            "created": "2024-03-02T17:07:46.268Z",
-            "modified": "2024-03-02T18:27:18.469Z",
+            "created": "2024-03-04T02:52:12.165Z",
+            "modified": "2024-03-04T02:52:12.165Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -54,15 +54,15 @@
             "tests": []
         },
         {
-            "_id": "7a09e8e9-9764-4aaf-a219-76b2341cc64f",
-            "colId": "28b35271-8bba-4f65-af84-b800cb8fbc6f",
+            "_id": "09cc981c-7672-40ca-ad52-eeca757f1166",
+            "colId": "2ddeb800-1a2f-46f9-888e-c0abd270b181",
             "containerId": "",
             "name": "Eliminar Comentario",
             "url": "localhost:3000/OpinionManager/v1/comments/65e3660680a7265ddbaf034f",
             "method": "DELETE",
             "sortNum": 30000,
-            "created": "2024-03-02T17:07:46.269Z",
-            "modified": "2024-03-02T18:27:09.427Z",
+            "created": "2024-03-04T02:52:12.166Z",
+            "modified": "2024-03-04T02:52:12.166Z",
             "headers": [
                 {
                     "name": "x-token",
