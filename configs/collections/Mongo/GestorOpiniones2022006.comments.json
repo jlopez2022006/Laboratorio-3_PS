@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "65e3787b787b5d113e39bfc9"
+  },
+  "UsuarioNombre": "Pedro Lopez",
+  "idPublicacion": "65e377b3787b5d113e39bfbb",
+  "Comentario": "Me encanto esa pelicula",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e378d1787b5d113e39bfd5"
+  },
+  "UsuarioNombre": "Jeshua Lopez",
+  "idPublicacion": "65e37819787b5d113e39bfc2",
+  "Comentario": "Yo he jugado la mayoria de juegos de Mario Bros y sin duda siempre sera mi favorito",
+  "estado": true,
+  "__v": 0
+}]

@@ -10,13 +10,21 @@ export const publicacionesGet = async (req, res) => {
         const [total, publicaciones] = await Promise.all([
             Publication.countDocuments(query),
             Publication.find(query)
-                .populate('comentarios')
+                .populate({
+                    path: 'comentarios',
+                    match: { estado: { $ne: false } }  
+                })
                 .skip(Number(desde))
                 .limit(Number(limite))
         ]);
+        const publicacionesFiltradas = publicaciones.map(pub => {
+            const comentariosFiltrados = pub.comentarios.filter(com => com.estado !== false);
+            return { ...pub.toObject(), comentarios: comentariosFiltrados };
+        });
+
         res.status(200).json({
             total,
-            publicaciones
+            publicaciones: publicacionesFiltradas
         });
     } catch (error) {
         console.error(error);

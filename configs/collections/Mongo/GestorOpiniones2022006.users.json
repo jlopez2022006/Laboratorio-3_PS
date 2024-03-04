@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "65e375ee0b2d5a812063292c"
+  },
+  "nombre": "Jeshua Lopez",
+  "correo": "jlopez@kinal.edu",
+  "password": "$2a$10$TqE9CrGeds/OPy927Z4sV.W/oBDzS00Fr5bs0UdBHMt8hW0rqY8om",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e376310b2d5a812063292f"
+  },
+  "nombre": "Pedro Lopez",
+  "correo": "plopez@kinal.edu",
+  "password": "$2a$10$IDx2nj/hIiXlcxsST0aKeuA5LwGsif1LdqoEBXsrVF5PAcZGXQEti",
+  "estado": true,
+  "__v": 0
+}]

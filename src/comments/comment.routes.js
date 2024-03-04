@@ -2,9 +2,10 @@ import { Router } from "express";
 import { check } from "express-validator";
 import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT } from "../middlewares/validar-jwt.js";
-import { comentariosPost } from "./comment.controller.js";
+import { comentariosDelete, comentariosPost, comentariosPut } from "./comment.controller.js";
 
 import Publicacion from "../publications/publication.model.js";
+import { existeComentarioById } from "../helpers/db-validators.js";
 
 const router = Router();
 
@@ -25,7 +26,23 @@ router.post(
     comentariosPost
 );
 
+router.put(
+    "/:id",
+    [
+        validarJWT,
+        check("id", "No es un ID válido").isMongoId(),
+        check("id").custom(existeComentarioById ),
+        validarCampos,
+    ],
+    comentariosPut
+);
 
+router.delete('/:id',
+    [
+        validarJWT
+    ], 
+    comentariosDelete
+);
 
 
 

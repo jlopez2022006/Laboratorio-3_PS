@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "65e377b3787b5d113e39bfbb"
+  },
+  "UsuarioNombre": "Jeshua Lopez",
+  "Titulo": "Spiderman",
+  "Categoria": "Pelicula",
+  "TextoPrincipal": "Es una de las mejores peliculas que he visto en toda mi vida, me encantaron sus efectos especiales",
+  "estado": true,
+  "comentarios": [
+    {
+      "$oid": "65e3787b787b5d113e39bfc9"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "65e37819787b5d113e39bfc2"
+  },
+  "UsuarioNombre": "Pedro Lopez",
+  "Titulo": "Mario Bros",
+  "Categoria": "Videojuego",
+  "TextoPrincipal": "El juego es muy entretenido, me recordó a mi infancia cuando lo jugaba en el nintendo",
+  "estado": true,
+  "comentarios": [
+    {
+      "$oid": "65e378d1787b5d113e39bfd5"
+    }
+  ],
+  "__v": 1
+}]

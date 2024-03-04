@@ -1,5 +1,6 @@
 import User from '../users/user.model.js'
 import Publication from '../publications/publication.model.js'
+import Comment from '../comments/comment.model.js'
 
 
 export const existenteEmail = async (correo = '') => {
@@ -23,4 +24,9 @@ export const existePublicacionById = async (id = '') => {
     }
 }
 
-
+export const existeComentarioById = async (id = '') => {
+    const existeComentario = await Comment.findById(id);
+    if (!existeComentario){
+        throw new Error(`Comment with ID: ${id} don't exists`);
+    }
+}

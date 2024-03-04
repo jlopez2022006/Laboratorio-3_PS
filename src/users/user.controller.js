@@ -27,6 +27,7 @@ export const usuariosPost = async (req, res) => {
     await usuario.save();
 
     res.status(200).json({
+        msg: "Registered user!",
         usuario
     });
 }
@@ -42,20 +43,31 @@ export const getUsuarioById = async (req, res) => {
 
 export const usuariosPut = async (req, res = response) => {
     const { id } = req.params;
-    const {_id, password, correo, ...resto} = req.body;
+    const { _id, password, oldPassword, correo, ...resto } = req.body;
 
-    if(password) {
-        const salt = bcryptjs.genSaltSync();
-        resto.password = bcryptjs.hashSync(password, salt);
+    try {
+        if (oldPassword && password) {
+            const usuario = await User.findById(id);
+
+            if (!bcryptjs.compareSync(oldPassword, usuario.password)) {
+                return res.status(400).json({
+                    msg: 'La contraseña anterior no es válida',
+                });
+            }
+            const salt = bcryptjs.genSaltSync();
+            resto.password = bcryptjs.hashSync(password, salt);
+        }
+        await User.findByIdAndUpdate(id, resto);
+        const usuarioActualizado = await User.findOne({ _id: id });
+        res.status(200).json({
+            msg: 'Usuario actualizado',
+            usuario: usuarioActualizado,
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            msg: 'Error al actualizar el usuario',
+        });
     }
-
-    await User.findByIdAndUpdate(id, resto);
-
-    const usuario = await User.findOne({_id: id});
-
-    res.status(200).json({
-        msg: 'Updated User',
-        usuario
-    });
-}
+};
 

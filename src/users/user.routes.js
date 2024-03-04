@@ -19,7 +19,7 @@ router.get("/", usuariosGet);
 router.get(
   "/:id",
   [
-    check("id", "No es un ID válido").isMongoId(),
+    check("id", "It is not a valid ID").isMongoId(),
     check("id").custom(existeUsuarioById),
     validarCampos,
   ],
@@ -29,9 +29,9 @@ router.get(
 router.post(
   "/",
   [
-    check("nombre", "El nombre es obligatorio").not().isEmpty(),
-    check("password", "El password debe ser mayor a 6 caracteres").isLength({min: 6,}),
-    check("correo", "Este no es un correo válido").isEmail(),
+    check("nombre", "The name is required").not().isEmpty(),
+    check("password", "The password must be more than 6 characters.").isLength({min: 6,}),
+    check("correo", "This is not a valid email").isEmail(),
     check("correo").custom(existenteEmail),
     validarCampos,
   ],
@@ -41,7 +41,8 @@ router.post(
 router.put(
   "/:id",
   [
-    check("id", "No es un ID válido").isMongoId(),
+    check("id", "It is not a valid ID").isMongoId(),
+    check("password", "The password must be more than 6 characters.").isLength({min: 6,}),
     check("id").custom(existeUsuarioById),
     validarCampos,
   ],

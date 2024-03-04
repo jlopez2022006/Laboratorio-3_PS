@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Comentarios",
+    "dateExported": "2024-03-02T19:09:00.199Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6ed17382-7f73-497d-aad1-0b9e47696a62",
+            "colId": "28b35271-8bba-4f65-af84-b800cb8fbc6f",
+            "containerId": "",
+            "name": "Comentar",
+            "url": "localhost:3000/OpinionManager/v1/comments",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T17:07:46.266Z",
+            "modified": "2024-03-02T19:06:57.612Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNzVlZTBiMmQ1YTgxMjA2MzI5MmMiLCJpYXQiOjE3MDk0MDYzNjQsImV4cCI6MTcwOTQyNDM2NH0.ExLlR3BOPvM2ZlcEL6HdHq75L6WgRWMyXbFuG4L9sas"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"idPublicacion\": \"65e37819787b5d113e39bfc2\",\n  \"Comentario\": \"Yo he jugado la mayoria de juegos de Mario Bros y sin duda siempre sera mi favorito\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9cd6e9dd-f5de-4d9e-b9cf-0945e37f829f",
+            "colId": "28b35271-8bba-4f65-af84-b800cb8fbc6f",
+            "containerId": "",
+            "name": "Editar Comentario",
+            "url": "localhost:3000/OpinionManager/v1/comments/65e3669580a7265ddbaf035e",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-02T17:07:46.268Z",
+            "modified": "2024-03-02T18:27:18.469Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Comentario\": \"Pues ni tanto\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7a09e8e9-9764-4aaf-a219-76b2341cc64f",
+            "colId": "28b35271-8bba-4f65-af84-b800cb8fbc6f",
+            "containerId": "",
+            "name": "Eliminar Comentario",
+            "url": "localhost:3000/OpinionManager/v1/comments/65e3660680a7265ddbaf034f",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-02T17:07:46.269Z",
+            "modified": "2024-03-02T18:27:09.427Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
